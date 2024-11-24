@@ -44,14 +44,10 @@ dataset includes clothing across 13 main categories and covers a wide range of
 scenarios, including occluded items, varying poses, and diverse lighting
 conditions.
 
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <img src=".github/train_batch2.jpg" width="50%">
-  <img src=".github/train_batch0.jpg" width="50%">
-</div>
+![Train Batch 2](.github/train_batch2.jpg)
+![Train Batch 0](.github/train_batch0.jpg)
 
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <img src=".github/cat_dist.png" width="80%">
-</div>
+![Category Distribution](.github/cat_dist.png)
 
 ### B. Model Architectures
 
@@ -138,9 +134,7 @@ slow and took an unreasonably long time to complete. This raised concerns about
 the feasibility of using YOLO for such large datasets, particularly in a
 real-world scenario where fast training and inference are required.
 
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <img src=".github/yolo_epoch_time.png" width="50%">
-</div>
+![YOLO Epoch Time](.github/yolo_epoch_time.png)
 
 Hence, given the constraints, we made the decision to shift our focus entirely
 to the Mask R-CNN architectures. This decision allowed us to dedicate
@@ -165,14 +159,10 @@ significantly in the initial epochs and continued to improve steadily throughout
 training. This indicates that both models were effectively learning from the
 dataset and converging towards optimal performance.
 
-<div style="display: flex; justify-content: center; gap: 30px">
-  <img src=".github/loss_box_comp.png" width="50%">
-  <img src=".github/loss_mask_comp.png" width="50%">
-</div>
+![Loss Box Comparison](.github/loss_box_comp.png)
+![Loss Mask Comparison](.github/loss_mask_comp.png)
 
-<div style="display: flex; justify-content: center; gap: 30px">
-  <img src=".github/loss_cl_comp.png" width="50%">
-</div>
+![Loss CL Comparison](.github/loss_cl_comp.png)
 
 The primary difference observed between the two architectures was the training
 speed. Due to its smaller number of layers, the ResNet-50 backbone trained
@@ -214,15 +204,11 @@ underperformed on less frequent ones.
 
 #### Mask-RCNN-R-50-FPN
 
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <img src=".github/mask-rcnn-r-50-fpn-3x.png" width="50%">
-</div>
+![Mask-RCNN-R-50-FPN](.github/mask-rcnn-r-50-fpn-3x.png)
 
 #### Mask-RCNN-R-101-FPN
 
-<div style="display: flex; justify-content: center; gap: 30px;">
-  <img src=".github/mask-rcnn-r-101-fpn-3x.png" width="50%">
-</div>
+![Mask-RCNN-R-101-FPN](.github/mask-rcnn-r-101-fpn-3x.png)
 
 ---
 
